@@ -1,0 +1,4 @@
+export class <%= ComponentName %>
+{
+    public Id: string;
+}

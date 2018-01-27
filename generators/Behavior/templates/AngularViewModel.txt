@@ -1,0 +1,28 @@
+
+type OptionsType = { Mode: string }; // TODO: include properties
+
+export class <%= ComponentName %>ViewModel
+{
+    private options: OptionsType;
+    protected get Options(): OptionsType
+    {
+        return this.options;
+    }
+    protected set Options(value: OptionsType) 
+    {
+        if (value != this.options)
+        {
+            this.options = value;
+            this.OnOptionsChanged(this.options);
+        }
+    }
+    
+    public constructor()
+    {
+    }
+
+    private OnOptionsChanged(newValue: OptionsType)
+    {
+       // TODO: ...
+    }
+}

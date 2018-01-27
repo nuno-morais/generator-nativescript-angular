@@ -1,0 +1,19 @@
+import { NgModule } from "@angular/core";
+import { CommonInfrastructureModule } from "../../Common/Infrastructure/CommonInfrastructureModule";
+import { CommonComponentsModule } from "../../Common/Components/CommonComponentsModule";
+import { <%= ComponentName %>RoutingModule } from "./<%= ComponentName %>RoutingModule";
+
+@NgModule({
+    imports: [
+        CommonComponentsModule,
+        CommonInfrastructureModule,
+        <%= ComponentName %>RoutingModule
+    ],
+    declarations: [
+    ],
+    exports: [
+    ],
+    providers: [
+    ]
+})
+export class <%= ComponentName %>Module { }

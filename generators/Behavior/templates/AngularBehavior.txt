@@ -1,0 +1,23 @@
+import { Directive, EventEmitter, HostListener, Input, Output } from "@angular/core";
+import { <%= ComponentName %>ViewModel } from "./<%= ComponentName %>ViewModel";
+
+@Directive({
+    selector: "[<%= ComponentName %>]"
+})
+export class <%= ComponentName %>Behavior extends <%= ComponentName %>ViewModel
+{
+    @Input("<%= ComponentName %>")
+    set <%= ComponentName %>(value) {
+        this.Options = value;
+    }
+        
+    @HostListener('tap') async onTap() {
+        // TODO: something to do
+    }
+
+    public constructor()
+    {
+        super();
+    }
+    
+}
