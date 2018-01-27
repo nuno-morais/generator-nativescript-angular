@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Nuno Morais",
+      "authorEmail": "geral@nuno-morais.eu",
+      "authorUrl": ""
+    }
+  }
+}

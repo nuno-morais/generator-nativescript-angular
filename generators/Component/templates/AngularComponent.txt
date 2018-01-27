@@ -1,0 +1,21 @@
+import { Component, OnInit } from "@angular/core";
+import { <%= ComponentName %>ViewModel } from "./<%= ComponentName %>ViewModel";
+
+@Component({
+    moduleId: module.id,
+    selector: "<%= ComponentName %>View",
+    templateUrl: "<%= ComponentName %>View.html",
+    styleUrls: ["<%= ComponentName %>ViewStyles.css"]
+})
+export class <%= ComponentName %>Component extends <%= ComponentName %>ViewModel implements OnInit
+{
+    public constructor()
+    {
+        super();
+    }
+
+    public ngOnInit(): void
+    {
+        this.Initialize();
+    }
+}
